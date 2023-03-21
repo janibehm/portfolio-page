@@ -48,12 +48,12 @@ table {
 }
 
 :root{
-  --main-bg-color: linear-gradient(to bottom, #d7ffff, #d7daff 80%)
+  --main-bg-color: linear-gradient(to bottom, #d7ffff, #d7dffd 80%)
 }
 
 body {
   font-family: "Sofia Sans", sans-serif;
-  background: var(--main-bg-color);
+  background-color: #ffffff;
   height: 100%;
   margin-bottom: 0;
   height: auto;
@@ -75,7 +75,7 @@ header {
   position: sticky;
      
     margin-top: 5em;
-    color: white;
+    color: #ffffff;
     background: var(--main-bg-color); 
     background-size: 400%;
     animation: movingBG 5s;
@@ -101,7 +101,7 @@ header {
 }
 
 .wave .shape-fill {
-    fill:rgb(180, 241, 255);
+    fill:#b4f1ff;
 }
 
 
@@ -148,6 +148,7 @@ select {
   padding: 10px;
   border-radius: 5px;
   margin: 20px;
+ 
 }
 
 #pic1 {
