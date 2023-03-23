@@ -59,61 +59,34 @@ h2 {
   margin: 0;
 }
 
+/* Form */
 .form-background {
   display: flex;
   justify-content: center;
-  width: 90vw;
-  max-width: 500px;
+  width: auto;
+  max-width: 500px; /* Set max-width to limit the form width */
   height: auto;
-  padding: 5vw;
-  margin: 0 auto;
+  padding: 20px;
+  margin: 0 auto; /* Center the form horizontally */
   background-color: rgb(255, 255, 255);
-  border-radius: 2vw;
+  border-radius: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100%; /* Set form width to 100% of its parent element */
 }
 
 form label {
   display: block;
-  margin-bottom: 2vw;
-  font-size: 4vw;
+  margin-bottom: 5px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 form input[type="text"],
 form input[type="email"],
-form input[type="submit"],
-form textarea {
-  padding: 2vw;
-  margin-bottom: 4vw;
-  border-radius: 2vw;
-  border: none;
-  font-size: 4vw;
-}
-
-form input[type="submit"] {
-  background-color: rgb(0, 183, 255);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 2vw;
-  border-radius: 2vw;
-}
-
-input[type="text"],
-input[type="email"] {
-  padding: 2vw;
-  margin-bottom: 4vw;
-  border: none;
-  border-bottom: 0.2vw solid #ccc;
-  width: 100%;
-  font-family: "Sofia Sans", sans-serif;
-  font-size: 4vw;
-},
 form input[type="submit"],
 form textarea {
   padding: 10px;
@@ -124,7 +97,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: rgb(0, 183, 255);
+  background-color: var(--button-color);
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -145,22 +118,12 @@ input[type="text"]:focus, input[type="email"]:focus {
   border-bottom: 1px solid rgb(0, 183, 255);
 }
 
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 14px;
-    color: #fff;
-    background-color: var(--button-color: #19A7CE;);
-    padding: 10px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: opacity 0.3s ease-in-out;
-}
 
-.back-to-top:hover {
-    opacity: 0.7;
+input, textarea, select {
+font-family: "Sofia Sans", sans-serif;
+margin: 10px 0;
+padding: 5px;
+border-radius: 5px;
 }
 
 .back-to-top {
@@ -197,7 +160,7 @@ img {
   width: 450px;
   height: 300px;
 }
-
+/* gallery desktop */
 .galleryContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
@@ -211,6 +174,20 @@ img {
 .galleryContainer img {
   display: block;
   margin: 0 auto;
+}
+
+/* gallery mobile */
+@media (max-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: 1fr; /* set one column for mobile */
+    padding: 20px; /* reduce padding on mobile */
+    margin-bottom: 6em; /* adjust margin on mobile */
+  }
+
+  .galleryContainer img {
+    width: 100%; /* make images fill container width on mobile */
+    height: auto; /* preserve aspect ratio */
+  }
 }
 
 #topBtn {
