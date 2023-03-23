@@ -20,9 +20,9 @@
      <!--  <div id="logo"><h1>Jani Behm</h1></div> -->
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
+         <li onclick="contactFunction()"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -39,6 +39,9 @@
 <img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg">
 </div>
   <footer>
+<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+    <section id="contact">
   <div class="form-background">
     <form>
       <label for="name">Name:</label>
@@ -50,6 +53,8 @@
       <input type="submit" value="Subscribe">
     </form>
   </div>
+  </section>
 </footer>
 </body>
+<script src="script.js"></script>
 </html>

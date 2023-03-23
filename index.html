@@ -13,18 +13,24 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/30ae4790f2.js" crossorigin="anonymous"></script>
-  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
-    <header>
-     <!--  <div id="logo"><h1>Jani Behm</h1></div> -->
-      <nav>
+<header>
+  <nav>
+        <button class="mobile">
+          <span class="fas fa-bars"></span>
+        </button>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="gallery.html">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+</header>
+
+</header>
 
     </header>
 
@@ -123,10 +129,10 @@
     <div class="skills">
       
        <div class="skills-icons">
-          <i class="fa-solid fa-thumbs-up fa-5x"></i>
+     <i class="fa-brands fa-apple fa-5x"></i>
         </div>
         <div class="skills-icons">
-          <i class="fa-solid fa-thumbs-up fa-5x"></i>
+         <i class="fa-solid fa-coins fa-5x"></i>
         </div>
           <div class="skills-icons">
             <i class="fa-solid fa-address-card fa-5x"></i>
@@ -135,6 +141,9 @@
     </div>
 
   <footer>
+<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+    <section id="contact">
   <div class="form-background">
     <form>
       <label for="name">Name:</label>
@@ -146,9 +155,8 @@
       <input type="submit" value="Subscribe">
     </form>
   </div>
-   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+  </section>
 </footer>
-
-
   </body>
+    <script src="script.js"></script>
 </html>
