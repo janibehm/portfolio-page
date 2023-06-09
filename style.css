@@ -203,6 +203,73 @@ border-radius: 5px;
   background-color: black;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 35%;
+  border-radius: 5px;
+  filter: brightness(90%);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  filter: brightness(100%);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.hero-banner {
+  background: url('images/heaven.jpg') no-repeat center center; 
+  background-size: cover; 
+  height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.hero-content button {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  color: white;
+  background-color: rgba(0, 123, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.hero-content button:hover {
+  background-color: rgba(0, 123, 255, 0.8);
+}
+
+
+
 /* Show the button when the user scrolls down */
 @media screen and (max-width: 768px) {
   #topBtn {
