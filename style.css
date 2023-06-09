@@ -11,6 +11,11 @@
  --button-color: rgb(0, 183, 255);
 }
 
+header.scrolled {
+  background: #000;  /* change to your desired color */
+  transition: background-color 0.5s ease-in-out;
+}
+
 body {
 font-family: "Sofia Sans", sans-serif;
 background-color: var(--main-bg-color-body);
@@ -21,6 +26,7 @@ background: var(--main-bg-color);
 }
 
 header {
+transition: background-color 0.5s ease-in-out;
 margin-top:0;
 position: sticky;
 top: 0;
