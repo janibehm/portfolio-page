@@ -9,6 +9,14 @@
  --footer-bg-color:#19A7CE;
  --button-color: black;
  --button-color: rgb(0, 183, 255);
+ --footer-bg-color: #19A7CE;
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  color: #ffffff; /* This sets the text color to white */
+  padding: 20px; /* Adds some padding around the footer content */
+  text-align: center; 
 }
 
 header.scrolled {
@@ -119,6 +127,8 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 }
+
+
 /* Form */
 .form-background {
   display: flex;
@@ -128,7 +138,6 @@ align-items: center;
   height: auto;
   padding: 20px;
   margin: 0 auto; /* Center the form horizontally */
-  background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
 
