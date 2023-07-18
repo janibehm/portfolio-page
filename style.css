@@ -9,7 +9,7 @@
  --footer-bg-color:#19A7CE;
  --button-color: black;
  --button-color: rgb(0, 183, 255);
- --footer-bg-color: #19A7CE;
+ --footer-bg-color: #006581;
 }
 
 footer {
@@ -32,6 +32,100 @@ margin: 0 auto;
 overflow-x: hidden;
 background: var(--main-bg-color);
 }
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.center h1{
+  text-align:center;
+  color:white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+}
+
+
+
+.hero-banner {
+  background-size: cover; 
+  height: 100vh; 
+  width: 200vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background: url('images/heaven.jpg') no-repeat center center; 
+  background-size:cover;
+        -webkit-animation: slidein 70s;
+        animation: slidein 70s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;     
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.hero-content button {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  color: white;
+  background-color: rgba(0, 123, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.hero-content button:hover {
+  background-color: rgba(0, 123, 255, 0.8);
+}
+
 
 header {
 transition: background-color 0.5s ease-in-out;
@@ -228,7 +322,7 @@ border-radius: 5px;
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 35%;
+  width: 60%;
   border-radius: 5px;
   filter: brightness(90%);
 }
@@ -244,44 +338,6 @@ border-radius: 5px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
-.hero-banner {
-  background: url('images/heaven.jpg') no-repeat center center; 
-  background-size: cover; 
-  height: 100vh; 
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-}
-
-.hero-content {
-  text-align: center;
-  color: white;
-  max-width: 600px;
-}
-
-.hero-content h1 {
-  font-size: 2.5em;
-}
-
-.hero-content p {
-  font-size: 1.2em;
-  margin: 1em 0;
-}
-
-.hero-content button {
-  padding: 0.5em 1em;
-  font-size: 1.2em;
-  color: white;
-  background-color: rgba(0, 123, 255, 1);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.5s ease;
-}
-
-.hero-content button:hover {
-  background-color: rgba(0, 123, 255, 0.8);
-}
 
 
 
