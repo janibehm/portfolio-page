@@ -23,29 +23,15 @@ body {
 
 footer {
   background-color: var(--footer-bg-color);
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
+  color: #ffffff; 
+  padding: 20px; 
+  text-align: center; 
 }
-
-/* header {
-  height: 30vh;
-} */
 
 header.scrolled {
   background: #000;
   transition: background-color 0.5s ease-in-out;
 }
-
-/* header {
-
-  background-image: url(/images/heaven.jpg); 
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-} */
-
 
 header {
   margin-top: 0;
@@ -195,19 +181,17 @@ p {
   justify-content: center;
   width: auto;
   max-width: 500px;
-  /* Set max-width to limit the form width */
   height: auto;
   padding: 20px;
-  margin: 0 auto;
-  /* Center the form horizontally */
+  margin: 0 auto; /* Center the form horizontally */
+
   border-radius: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  /* Set form width to 100% of its parent element */
+  width: 100%; /* Set form width to 100% of its parent element */
 }
 
 form label {
@@ -233,56 +217,6 @@ form input[type="submit"] {
   color: white;
   font-weight: bold;
   cursor: pointer;
-}
-
-input[type="text"],
-input[type="email"] {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-  font-family: "Sofia Sans", sans-serif;
-  font-size: 16px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-  outline: none;
-  border-bottom: 1px solid rgb(0, 183, 255);
-}
-
-
-input,
-textarea,
-select {
-  font-family: "Sofia Sans", sans-serif;
-  margin: 10px 0;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-/* Top Button */
-#topBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #555;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-  transition: opacity 0.3s, visibility 0.3s ease-in-out;
-}
-
-
-#topBtn:hover {
-  background-color: black;
 }
 
 .card-container {
@@ -311,8 +245,28 @@ select {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
+/* Top Button */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: opacity 0.3s, visibility 0.3s ease-in-out;
+}
 
 
+#topBtn:hover {
+  background-color: black;
+}
 
 /* Show the button when the user scrolls down */
 @media screen and (max-width: 768px) {
