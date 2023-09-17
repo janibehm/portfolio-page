@@ -30,7 +30,7 @@ function topFunction() {
   }
 }
 
-// When the user clicks on the "Contact" link, smoothly scroll to the bottom of the page
+// When the user clicks on the "Contact" link, scroll to the bottom of the page
 function scrollToBottom() {
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 }
