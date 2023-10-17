@@ -119,7 +119,6 @@ h2 {
   font-size: 50px;
   color: rgb(0, 183, 255);
   box-shadow: inset;
-  margin: 0;
 }
 
 section {
@@ -128,14 +127,6 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.pic {
-  width: 100%;
-  height: 300px;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 #pic1 {
@@ -180,7 +171,6 @@ p {
   height: auto;
   padding: 20px;
   margin: 0 auto; /* Center the form horizontally */
-
   border-radius: 10px;
 }
 
@@ -223,6 +213,7 @@ form input[type='submit'] {
 }
 
 .card {
+  margin-top: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 60%;
@@ -236,7 +227,6 @@ form input[type='submit'] {
 }
 
 .card:hover {
-  transform: scale(1.05);
   filter: brightness(100%);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
@@ -283,17 +273,13 @@ form input[type='submit'] {
     display: none;
   }
 
-  .mobile {
-    display: block;
-  }
-
   ul.responsive {
     display: block;
     background-color: white;
     color: #333;
     position: absolute;
     left: 0;
-    top: 5rem;
+
     width: 100%;
   }
 
@@ -301,10 +287,19 @@ form input[type='submit'] {
     display: block;
     margin: 1rem;
   }
+}
+.mobile {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  margin-top: 20px;
+}
 
-  header.bg .mobile {
-    color: #333;
-  }
+#burger {
+  margin-top: 12px;
 }
 
 .material-symbols-outlined {
