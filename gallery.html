@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
-    <link rel="stylesheet" href="style-gallery.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style-gallery-minified.css" />
+
     <script
       src="https://kit.fontawesome.com/30ae4790f2.js"
       crossorigin="anonymous"
@@ -21,8 +16,14 @@
     <header>
       <nav>
         <div id="mobileBtn">
-          <button class="mobile">
-            <span id="burger" class="fas fa-bars"></span>
+          <button
+            class="mobile"
+            aria-label="mobile"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            onclick="toggleMenu()"
+          >
+            <span id="burger" class="fas fa-bars" aria-hidden="true"></span>
           </button>
         </div>
         <ul>
@@ -33,35 +34,64 @@
       </nav>
     </header>
     <div class="galleryContainer">
-      <img
-        src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg"
-      />
-
-      <img
-        src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg"
-      />
-
-      <img
-        src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg"
-      />
-      <img
-        src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg
-"
-      />
-
-      <img
-        src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg"
-      />
-      <img
-        src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg"
-      />
+      <div className="card">
+        <img
+          src="/images/gallery/horse-herd-fog-nature-min.jpeg"
+          alt="horse-herd-fog-nature"
+          width="500"
+          height="300"
+        />
+      </div>
+      <div className="card">
+        <img
+          src="/images/gallery/makis-min.jpeg"
+          alt="makis"
+          width="500"
+          height="300"
+        />
+      </div>
+      <div className="card">
+        <img
+          src="/images/gallery/fish-min.jpeg"
+          alt="fishes"
+          width="500"
+          height="300"
+        />
+      </div>
+      <div className="card">
+        <img
+          src="/images/gallery/ibis-bird-red-animals-min.jpeg"
+          alt="fish"
+          width="500"
+          height="300"
+        />
+      </div>
+      <div className="card">
+        <img
+          src="/images/gallery/elephant-cub-tsavo-kenya-min.jpeg"
+          alt="elephant-cub"
+          width="500"
+          height="300"
+        />
+      </div>
+      <div className="card">
+        <img src="/images/gallery/ape-berber-monkeys-mammal-affchen-min.jpeg"
+        alt="apes width="600" width="500" height="300"/>
+      </div>
     </div>
     <footer>
-      <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+      <button
+        onclick="topFunction()"
+        id="topBtn"
+        title="Go to top"
+        aria-label="Go to top of the page"
+      >
+        <span aria-hidden="true">Top</span>
+      </button>
 
       <div class="form-background">
         <form>
-          <label for="name">Name:</label>
+          <label for="name"><h3>Name:</h3></label>
           <input
             type="text"
             id="name"
@@ -70,7 +100,7 @@
             required
           />
 
-          <label for="email">Email:</label>
+          <label for="email"><h3>Email:</h3></label>
           <input
             type="email"
             id="email"

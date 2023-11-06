@@ -38,6 +38,31 @@ header {
   z-index: 5;
 }
 
+.galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+  grid-gap: 20px;
+  margin-bottom: 12em;
+}
+.galleryContainer img {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .galleryContainer {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-bottom: 6em;
+  }
+  .galleryContainer img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* desktop navigation */
 
 nav {
@@ -136,14 +161,14 @@ img {
 /* gallery mobile */
 @media (max-width: 768px) {
   .galleryContainer {
-    grid-template-columns: 1fr; /* set one column for mobile */
-    padding: 20px; /* reduce padding on mobile */
-    margin-bottom: 6em; /* adjust margin on mobile */
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-bottom: 6em;
   }
 
   .galleryContainer img {
-    width: 100%; /* make images fill container width on mobile */
-    height: auto; /* preserve aspect ratio */
+    width: 100%;
+    height: auto;
   }
 }
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-minified.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,14 +20,16 @@
       <header>
         <nav>
           <div id="mobileBtn">
-              <button class="mobile">
-                <span id="burger" class="fas fa-bars"></span>
-              </button>
+              <button class="mobile" aria-label="mobile" aria-controls="primary-navigation" aria-expanded="false" onclick="toggleMenu()">
+          <span id="burger" class="fas fa-bars" aria-hidden="true"></span>
+       
+        </button>
+
           </div>
               <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                 <li onclick="scrollToBottom()"><a href="#contact">Contact</a></li>
               </ul>
             </nav>
            
@@ -61,17 +63,17 @@
           facere, error, alias iusto et vitae autem. Vero vel sapiente ipsam
           rerum. Rem hic temporibus, aspernatur animi veniam culpa tempore
           assumenda sint numquam consequatur reiciendis quo, optio doloremque
-          nostrum nihil enim exercitationem ex, quia cupiditate magni a
-          explicabo qui incidunt. Eaque, eligendi, hic sed voluptate quas magnam
-          cupiditate voluptatibus porro maiores, commodi harum deserunt aliquam
-          fugiat vero. Perspiciatis rem aperiam est recusandae consequatur
-          aliquid. Facere nobis magnam nulla quis veritatis a dolores similique!
-          Ipsam modi accusamus vitae quod, repudiandae cupiditate facere quis
-          iure quisquam nostrum voluptates voluptatum quaerat rem, maiores ea
-          quos dolorum dolor suscipit natus a! Suscipit nam error sapiente ad
-          necessitatibus eaque voluptates harum vero optio nostrum est ea vitae
-          facere minima quia quae voluptas ipsum praesentium, dolorem alias odit
-          excepturi perspiciatis ut quidem? Ea!
+          quidem, voluptatum quibusdam. Quisquam, voluptatum. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, molestiae 
+          doloribus? Perferendis, dignissimos quibusdam. Ab explicabo quae molestias eos 
+          molestiae ea. Optio porro iste sint ab, doloribus vitae distinctio, ducimus
+           dolore labore magni laboriosam, modi praesentium nam! Quae maiores quasi 
+           voluptates consectetur aliquam eveniet accusantium corporis alias earum soluta 
+           dignissimos, dolor assumenda eum facere sint? Ea quia illum quibusdam incidunt 
+           delectus et similique numquam fugit asperiores distinctio? Veritatis neque 
+           praesentium dolorum dolore laborum, delectus animi nisi perferendis eligendi,
+            ipsum totam hic rerum quae! Quaerat ad excepturi eum, animi repellat laudantium
+             vero, ut alias officiis, facilis distinctio corrupti aspernatur a voluptatibus.
         </p>
       </section>
 
@@ -81,16 +83,49 @@
     <section id="card-section">
       <h2>Projects</h2>
       <div class="card">
-        <img src="/images/pizza.png" alt="Image description">
-        <!-- You can add more content to this card here -->
+    <img
+      srcset="/
+              /images/recipe-app-640.jpg 640w"
+      sizes="
+            (max-width: 640px)
+            640px"
+      src="/images/recipe-app-minified.jpg"
+      alt="Recipe App image"
+    >
+
+        
+      <div class="card-text">
+      </div>
+     
       </div>
       <div class="card">
-        <img src="images/pokemon.png" alt="Image description">
-        <!-- You can add more content to this card here -->
+        <img 
+         srcset="/
+              /images/pizza-640.jpg 640w"
+        sizes="
+            (max-width: 640px)
+            640px"
+        src="/images/pizza-minified.jpg" 
+        alt="pizza image"
+        width="640"
+        height="457"
+      ></img>
+        
+   
       </div>
       <div class="card">
-        <img src="images/Speed-Mania.png" alt="Image description">
-        <!-- You can add more content to this card here -->
+        <img 
+         srcset="/
+              /images/recipe-app-640.jpg 640w"
+          sizes="
+                (max-width: 640px)
+                640px"
+        src="images/speed-mania-react-minified.jpg " 
+             alt="speed mania react image"
+             width="640"
+             height="457"
+           ></img>
+ 
       </div>
     </section>
     <h2>Skills</h2>
@@ -103,7 +138,7 @@
           <img width="100" height="100" src="https://img.icons8.com/color/144/css3.png" alt="css3"/>
         </div>
           <div class="skills-icons">
-            <img width="100" height="100" src="https://img.icons8.com/fluency/144/node-js.png" alt="node-js"/>
+            <img width="100" height="100" src="https://img.icons8.com/fluency/144/node-js.png" alt="javascript"/>
     </div>
      
     </div>
@@ -123,5 +158,5 @@
           </form>
         </div>
   </body>
-    <script src="script.js"></script>
+    <script src="script-minified.js"></script>
 </html>
