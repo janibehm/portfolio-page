@@ -43,7 +43,6 @@ section {
   display: flex;
 }
 * {
-  box-sizing: border-box;
   padding: 0;
 }
 :root {
@@ -81,6 +80,7 @@ header {
   height: 100vh;
   position: relative;
 }
+
 @keyframes moveHeroBanner {
   from {
     background-position: 0 0;
@@ -90,7 +90,24 @@ header {
   }
 }
 
-/* First, ensure that the CSS is targeting the correct container for the cards. */
+.hero-content {
+  background-image: url(/images/heaven-bg.jpg);
+  animation: 100s linear infinite moveHeroBanner;
+  align-items: center;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    background-image: url(/images/heaven-bg-mobile.jpg);
+    animation: 100s linear infinite moveHeroBanner;
+    align-items: center;
+    color: #fff;
+  }
+}
+
 #card-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -126,12 +143,6 @@ header {
   }
 }
 
-.hero-content {
-  background-image: url(/images/heaven-bg.jpg);
-  animation: 100s linear infinite moveHeroBanner;
-  align-items: center;
-  color: #fff;
-}
 .center h1 {
   margin-top: 10em;
   color: #fff;
@@ -321,6 +332,7 @@ form input[type='submit'] {
   background-color: var(--bg-color1);
   color: white;
   padding: 15vh;
+  width: 100%;
 }
 
 #skills {

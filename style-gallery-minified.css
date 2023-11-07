@@ -134,6 +134,7 @@ form input[type='submit'] {
     height: auto;
   }
 }
+
 #topBtn {
   display: none;
   position: fixed;
@@ -199,18 +200,6 @@ form input[type='submit'] {
     display: none;
   }
 }
-/* @media (min-width: 800px) {
-  .card1 {
-    width: 100%;
-    padding: 3em;
-    z-index: -1;
-    padding-left: 8em;
-  }
-} */
-
-/* .card {
-  width: 600px;
-} */
 
 img:hover {
   box-shadow: 0 8px 16px rgb(255, 255, 255);
