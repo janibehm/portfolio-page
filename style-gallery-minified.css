@@ -20,6 +20,7 @@ footer,
 header {
   color: #fff;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -107,9 +108,7 @@ form input[type='submit'] {
   font-weight: 700;
   cursor: pointer;
 }
-.card:focus {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
+
 .galleryContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -118,6 +117,7 @@ form input[type='submit'] {
   padding: 50px;
   grid-gap: 20px;
   margin-bottom: 12em;
+  margin-top: 8%;
 }
 .galleryContainer img {
   display: block;
@@ -199,21 +199,46 @@ form input[type='submit'] {
     display: none;
   }
 }
-@media (min-width: 800px) {
-  .bg1 {
-    background-color: --black;
+/* @media (min-width: 800px) {
+  .card1 {
     width: 100%;
     padding: 3em;
     z-index: -1;
     padding-left: 8em;
   }
+} */
+
+/* .card {
+  width: 600px;
+} */
+
+img:hover {
+  box-shadow: 0 8px 16px rgb(255, 255, 255);
+}
+@media (min-width: 800px) {
+  img:hover {
+    transform: scale(1.5) translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7), 0 0 16px rgba(0, 0, 0, 0.5);
+    margin-left: 10%;
+  }
+}
+@media (min-width: 800px) {
+  .card1 {
+    padding-right: 20%;
+    padding-left: 15%;
+    margin-bottom: 18%;
+    margin-top: 10%;
+  }
 }
 
-.card img:focus {
-  transform: scale(1.5);
-  transition: transform 0.3s ease;
-}
-
-#cardLast {
-  padding-top: 2em;
+@media (min-width: 800px) {
+  .card2 {
+    padding-left: 15%;
+    padding-right: 20%;
+    margin-bottom: 18%;
+  }
 }
