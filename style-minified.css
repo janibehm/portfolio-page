@@ -48,10 +48,10 @@ section {
 }
 :root {
   --main-bg-color-body: #f6f1f1;
-  --footer-bg-color: #19a7ce;
+  --footer-bg-color: #178bac;
   --button-color: black;
   --button-color: rgb(0, 183, 255);
-  --footer-bg-color: #006581;
+  --bg-color1: rgb(21, 21, 21);
 }
 body {
   font-family: monsterrat;
@@ -66,7 +66,7 @@ footer {
   padding: 20px;
 }
 header.scrolled {
-  background: #000;
+  background: var(--bg-color1);
   transition: background-color 0.5s ease-in-out;
 }
 header {
@@ -315,4 +315,19 @@ form input[type='submit'] {
   #mobileBtn {
     display: none;
   }
+}
+
+#about {
+  background-color: var(--bg-color1);
+  color: white;
+  padding: 15vh;
+}
+
+#skills {
+  background-color: var(--bg-color1);
+  color: white;
+}
+
+#divider {
+  padding: 30vh;
 }

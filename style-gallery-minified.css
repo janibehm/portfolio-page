@@ -28,7 +28,9 @@ header {
 :root {
   --button-color: black;
   --button-color: rgb(0, 183, 255);
-  --footer-bg-color: #006581;
+  --footer-bg-color: #178bac;
+  --background: rgb(0, 0, 0);
+  --bg-color1: rgb(21, 21, 21);
 }
 footer {
   background-color: var(--footer-bg-color);
@@ -36,11 +38,11 @@ footer {
 }
 body {
   font-family: 'Montserrat-Thin', sans-serif;
-  background-color: var(--main-bg-color-body);
+  background-color: var(--background);
   height: 100%;
   margin: 0 auto;
   overflow-x: hidden;
-  background: var(--main-bg-color);
+  background: var(--bg-color1);
 }
 header {
   position: sticky;
@@ -58,7 +60,7 @@ nav ul {
   list-style: none;
 }
 nav ul li a {
-  color: #00d0ff;
+  color: #00a8cd;
   text-decoration: none;
   font-size: x-large;
   font-family: 'Montserrat-Thin', sans-serif;
@@ -148,7 +150,8 @@ form input[type='submit'] {
   transition: opacity 0.3s, visibility 0.3s ease-in-out;
 }
 #topBtn:hover {
-  background-color: #000;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 @media screen and (max-width: 800px) {
   #topBtn {
@@ -195,4 +198,22 @@ form input[type='submit'] {
   #mobileBtn {
     display: none;
   }
+}
+@media (min-width: 800px) {
+  .bg1 {
+    background-color: --black;
+    width: 100%;
+    padding: 3em;
+    z-index: -1;
+    padding-left: 8em;
+  }
+}
+
+.card img:focus {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
+
+#cardLast {
+  padding-top: 2em;
 }
