@@ -41,6 +41,7 @@ body {
   font-family: 'Montserrat-Thin', sans-serif;
   background-color: var(--background);
   height: 100%;
+  width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
   background: var(--bg-color1);
@@ -123,7 +124,7 @@ form input[type='submit'] {
   display: block;
   margin: 0 auto;
 }
-@media (max-width: 1400px) {
+@media (max-width: 800px) {
   .galleryContainer {
     grid-template-columns: 1fr;
     padding: 20px;
