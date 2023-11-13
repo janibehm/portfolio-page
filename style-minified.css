@@ -51,6 +51,7 @@ section {
   --button-color: black;
   --button-color: rgb(0, 183, 255);
   --bg-color1: rgb(21, 21, 21);
+  --text-color-footer: #fff;
 }
 body {
   font-family: monsterrat;

@@ -101,7 +101,7 @@ h2 {
   max-width: 500px;
   height: auto;
   padding: 20px;
-  margin: 0 auto; /* Center the form horizontally */
+  margin: 0 auto;
 
   border-radius: 10px;
 }
