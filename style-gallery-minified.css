@@ -1,19 +1,16 @@
 footer,
 h2 {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
 }
 form,
 nav,
 nav ul {
   display: flex;
 }
+
 nav ul li,
 nav ul li a {
   padding: 10px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
 }
 #topBtn,
 footer,
@@ -38,7 +35,7 @@ footer {
   padding: 20px;
 }
 body {
-  font-family: 'Montserrat-Thin', sans-serif;
+  font-family: 'Sofia Sans', sans-serif;
   background-color: var(--background);
   height: 100%;
   width: 100%;
@@ -51,7 +48,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 5em;
+  margin-top: 1em;
   background: var(--main-bg-color);
   z-index: 5;
 }
@@ -64,14 +61,11 @@ nav ul {
 nav ul li a {
   color: #00a8cd;
   text-decoration: none;
-  font-size: x-large;
-  font-family: 'Montserrat-Thin', sans-serif;
 }
 h2 {
   font-size: 10vw;
   color: #00b7ff;
   box-shadow: inset;
-  font-family: 'Montserrat-Thin', sans-serif;
 }
 .form-background {
   display: flex;
@@ -90,7 +84,6 @@ form {
 form label {
   display: block;
   margin-bottom: 5px;
-  font-size: 18px;
   font-weight: 700;
 }
 form input[type='email'],
@@ -101,7 +94,7 @@ form textarea {
   margin-bottom: 15px;
   border-radius: 5px;
   border: none;
-  font-size: 16px;
+  font-size: 1.2em;
 }
 form input[type='submit'] {
   background-color: var(--button-color);
