@@ -2,6 +2,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: 'Sofia Sans', sans-serif;
 }
 
 body,
@@ -14,19 +15,26 @@ h6,
 p,
 a,
 nav ul li a {
-  font-size: 20px; /*base font size */
+  font-size: 30px;
+}
+
+nav ul li,
+nav ul li a {
+  padding: 10px;
+}
+form label,
+p {
+  font-weight: 100;
 }
 .hero-banner,
 .hero-content {
   justify-content: center;
+  width: 100%;
 }
-.center h1,
+
 .hero-content,
-footer,
 h2 {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
 }
 #pic1,
 #pic3 {
@@ -34,18 +42,6 @@ h2 {
   float: left;
 }
 
-nav ul li,
-nav ul li a {
-  padding: 10px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
-form label,
-p {
-  font-weight: 100;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
 .card-container,
 .hero-banner,
 .mobile,
@@ -64,11 +60,12 @@ section {
   --footer-bg-color: #178bac;
   --button-color: black;
   --button-color: rgb(0, 183, 255);
+  --header-bg-color2: rgb(25, 25, 25);
+  --hero-text-color: #399dfb;
+  --header-bg-color: #ffffff;
   --bg-color1: rgb(21, 21, 21);
-  --hero-color: #399dfb;
 }
 body {
-  font-family: monsterrat;
   background-color: var(--main-bg-color-body);
   height: auto;
   overflow-x: hidden;
@@ -80,21 +77,25 @@ footer {
   padding: 20px;
 }
 header.scrolled {
-  background: #000;
+  background: var(--header-bg-color2);
   transition: background-color 0.5s ease-in-out;
 }
-
 header {
-  margin-top: 0;
-  position: sticky;
+  position: fixed;
   top: 0;
-  color: #ffffff;
+  margin-top: 0px;
+  left: 0;
+  right: 0;
+  background: var(--header-bg-color);
   z-index: 5;
 }
 .hero-banner {
-  background: 0 0 / cover no-repeat;
+  display: flex;
+  background: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
   position: relative;
-  height: 100px;
 }
 
 @keyframes moveHeroBanner {
@@ -108,15 +109,20 @@ header {
 
 .hero-content {
   background-image: url(/images/heaven-bg.jpg);
-  animation: 100s linear infinite moveHeroBanner;
-  align-items: center;
-  background-repeat: no-repeat;
+  animation: moveHeroBanner 100s linear infinite;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
   .hero-content {
     background-image: url(/images/heaven-bg-mobile.jpg);
+    animation: 100s linear infinite moveHeroBanner;
+    align-items: center;
   }
+}
+
+.hero-text {
+  margin-top: 8%;
 }
 
 #card-section {
@@ -153,15 +159,13 @@ header {
   }
 }
 
-.center h1 {
-  margin-top: 10em;
-  color: var(--heading-color);
-  font-family: 'Source Code Pro', monospace;
-  text-transform: uppercase;
-}
 .hero-content h1 {
   font-size: 5em;
-  color: --hero-color;
+  color: var(--hero-text-color);
+}
+
+.hero-content h2 {
+  color: var(--hero-text-color);
 }
 
 nav {
@@ -176,8 +180,9 @@ nav ul li a {
   font-size: x-large;
 }
 h2 {
+  padding-top: 100px;
   font-size: 50px;
-  color: var(--hero-color);
+  color: var(--heading-color);
   box-shadow: inset;
 }
 section {
@@ -191,6 +196,7 @@ section {
 }
 #pic2 {
   background: url(images/pic2.jpg);
+  /*  float: right; */
 }
 #pic3 {
   background: url(images/pic3.jpg);
@@ -221,11 +227,7 @@ form {
   flex-direction: column;
   width: 100%;
 }
-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 18px;
-}
+
 form input[type='email'],
 form input[type='submit'],
 form input[type='text'],
@@ -234,7 +236,7 @@ form textarea {
   margin-bottom: 15px;
   border-radius: 5px;
   border: none;
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 form input[type='submit'] {
   background-color: var(--button-color);
@@ -280,8 +282,8 @@ form input[type='submit'] {
   z-index: 99;
   border: none;
   outline: 0;
-  background-color: #555;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
@@ -289,7 +291,8 @@ form input[type='submit'] {
   transition: opacity 0.3s, visibility 0.3s ease-in-out;
 }
 #topBtn:hover {
-  background-color: #000;
+  background-color: black;
+  color: white;
 }
 @media screen and (max-width: 800px) {
   #topBtn {
