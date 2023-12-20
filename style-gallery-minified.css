@@ -130,7 +130,7 @@ form input[type='submit'] {
   display: block;
   margin: 0 auto;
 }
-@media (max-width: 1304px) {
+@media (max-width: 904px) {
   .galleryContainer {
     grid-template-columns: 1fr;
     padding: 20px;
