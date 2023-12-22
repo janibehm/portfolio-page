@@ -1,3 +1,7 @@
+*,
+body {
+  margin: 0;
+}
 footer,
 h2 {
   text-align: center;
@@ -17,12 +21,8 @@ h6,
 p,
 a,
 nav ul li a {
-  font-size: 20px;
-}
-nav ul li,
-nav ul li a {
+  font-size: 1.3em;
   padding: 10px;
-  font-size: 30px;
 }
 
 form label,
@@ -63,7 +63,6 @@ header.scrolled {
 header {
   position: fixed;
   top: 0;
-  margin-top: 1em;
   left: 0;
   right: 0;
   z-index: 5;
@@ -122,7 +121,7 @@ form input[type='submit'] {
   justify-content: center;
   align-content: center;
   padding: 50px;
-  grid-gap: 20px;
+  grid-gap: 5em;
   margin-bottom: 12em;
   margin-top: 8%;
 }
@@ -130,7 +129,7 @@ form input[type='submit'] {
   display: block;
   margin: 0 auto;
 }
-@media (max-width: 904px) {
+@media (max-width: 1260px) {
   .galleryContainer {
     grid-template-columns: 1fr;
     padding: 20px;
@@ -172,7 +171,7 @@ form input[type='submit'] {
     display: none;
   }
 }
-@media (max-width: 1304px) {
+@media (max-width: 900px) {
   nav ul {
     display: none;
   }
@@ -203,7 +202,7 @@ form input[type='submit'] {
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
-@media (min-width: 1304px) {
+@media (min-width: 900px) {
   #mobileBtn {
     display: none;
   }
@@ -211,27 +210,4 @@ form input[type='submit'] {
 
 img:hover {
   box-shadow: 0 8px 16px rgb(255, 255, 255);
-}
-
-@media (min-width: 1304px) {
-  #card1 {
-    padding-right: 20%;
-    padding-left: 15%;
-    margin-bottom: 18%;
-    margin-top: 10%;
-  }
-}
-
-@media (min-width: 1304px) {
-  #card2 {
-    padding-left: 15%;
-    margin-bottom: 18%;
-  }
-}
-
-@media (min-width: 1304px) {
-  #last-card {
-    padding-left: 15%;
-    margin-bottom: 18%;
-  }
 }
