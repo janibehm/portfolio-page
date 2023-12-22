@@ -23,7 +23,7 @@ window.onscroll = function () {
   scrollFunction();
 };
 const mobMenu = () => {
-    for (const o of menuItems) o.addEventListener('click', mobMenu);
+    for (let o of menuItems) o.addEventListener('click', mobMenu);
     nav.classList.contains('responsive')
       ? nav.classList.remove('responsive')
       : nav.classList.add('responsive');
