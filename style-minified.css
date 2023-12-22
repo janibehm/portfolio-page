@@ -1,6 +1,8 @@
 *,
 body {
   overflow-x: hidden;
+  margin: 0;
+  font-family: 'Sofia Sans', sans-serif;
 }
 .hero-content h1,
 .hero-content h2 {
@@ -19,11 +21,6 @@ header {
 #skills {
   background-color: var(--bg-color1);
   color: #fff;
-}
-*,
-body {
-  margin: 0;
-  font-family: 'Sofia Sans', sans-serif;
 }
 a,
 body,
@@ -112,7 +109,7 @@ header {
 .hero-banner {
   background: 0 0 / cover no-repeat;
   width: 100%;
-  height: 90vh;
+  height: 75vh;
 }
 @keyframes moveHeroBanner {
   from {
@@ -130,7 +127,7 @@ header {
 }
 @media (max-width: 600px) {
   .hero-content {
-    background-image: url(/images/heaven-bg.jpg);
+    background-image: url(/images/heaven-bg-mobile.jpg);
     animation: 100s linear infinite moveHeroBanner;
     align-items: center;
   }

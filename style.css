@@ -1,10 +1,31 @@
 *,
 body {
-  margin: 0;
   overflow-x: hidden;
+}
+.hero-content h1,
+.hero-content h2 {
+  color: var(--hero-text-color);
+}
+#topBtn,
+header {
+  position: fixed;
+}
+.hero-banner,
+.mobile {
+  display: flex;
+  position: relative;
+}
+#about,
+#skills {
+  background-color: var(--bg-color1);
+  color: #fff;
+}
+*,
+body {
+  margin: 0;
   font-family: 'Sofia Sans', sans-serif;
 }
-
+a,
 body,
 h1,
 h2,
@@ -12,12 +33,10 @@ h3,
 h4,
 h5,
 h6,
-p,
-a,
-nav ul li a {
+nav ul li a,
+p {
   font-size: 1.3em;
 }
-
 nav ul li,
 nav ul li a {
   padding: 10px;
@@ -27,11 +46,10 @@ p {
   font-weight: 100;
 }
 .hero-banner,
-.hero-content {
+.hero-content,
+nav {
   justify-content: center;
-  width: 100%;
 }
-
 .hero-content,
 h2 {
   text-align: center;
@@ -41,7 +59,6 @@ h2 {
   margin-left: 0;
   float: left;
 }
-
 .card-container,
 .hero-banner,
 .mobile,
@@ -68,7 +85,6 @@ section {
 body {
   background-color: var(--main-bg-color-body);
   height: auto;
-  overflow-x: hidden;
   background: var(--main-bg-color);
 }
 footer {
@@ -81,9 +97,8 @@ header.scrolled {
   transition: background-color 0.5s ease-in-out;
 }
 header {
-  position: fixed;
   top: 0;
-  margin-top: 0px;
+  margin-top: 0;
   left: 0;
   right: 0;
   background: var(--header-bg-color);
@@ -91,18 +106,14 @@ header {
 }
 @media screen and (max-width: 900px) {
   header {
-    background: none;
+    background: 0 0;
   }
 }
 .hero-banner {
-  display: flex;
-  background: no-repeat;
-  background-size: cover;
+  background: 0 0 / cover no-repeat;
   width: 100%;
-  height: 90vh;
-  position: relative;
+  height: 75vh;
 }
-
 @keyframes moveHeroBanner {
   from {
     background-position: 0 0;
@@ -111,26 +122,22 @@ header {
     background-position: 100% 0;
   }
 }
-
 .hero-content {
   background-image: url(/images/heaven-bg.jpg);
-  animation: moveHeroBanner 100s linear infinite;
+  animation: 100s linear infinite moveHeroBanner;
   width: 100%;
   background-repeat: no-repeat;
 }
-
 @media (max-width: 600px) {
   .hero-content {
-    background-image: url(/images/heaven-bg.jpg);
+    background-image: url(/images/heaven-bg-mobile.jpg);
     animation: 100s linear infinite moveHeroBanner;
     align-items: center;
   }
 }
-
 .hero-text {
   margin-top: 15%;
 }
-
 #card-section {
   width: 80%;
   display: grid;
@@ -142,12 +149,6 @@ header {
   margin-left: 10%;
   margin-top: 12%;
 }
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
 @media (max-width: 768px) {
   #card-section {
     grid-template-columns: 1fr;
@@ -157,25 +158,14 @@ header {
     height: auto;
   }
 }
-
 @media (max-width: 767px) {
   .card {
     flex-basis: 100%;
     max-width: 100%;
   }
 }
-
 .hero-content h1 {
   font-size: 4em;
-  color: var(--hero-text-color);
-}
-
-.hero-content h2 {
-  color: var(--hero-text-color);
-}
-
-nav {
-  justify-content: center;
 }
 nav ul {
   list-style: none;
@@ -202,7 +192,6 @@ section {
 }
 #pic2 {
   background: url(images/pic2.jpg);
-  /*  float: right; */
 }
 #pic3 {
   background: url(images/pic3.jpg);
@@ -221,7 +210,6 @@ p {
 @media (max-width: 430px) {
   .skills {
     display: flex;
-    height: 30vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -229,7 +217,6 @@ p {
   }
 }
 .form-background {
-  width: 100%;
   display: flex;
   justify-content: center;
   width: auto;
@@ -239,11 +226,15 @@ p {
   margin: 0 auto;
   border-radius: 10px;
 }
+#about,
+#skills,
+.card img,
 form {
-  flex-direction: column;
   width: 100%;
 }
-
+form {
+  flex-direction: column;
+}
 form input[type='email'],
 form input[type='submit'],
 form input[type='text'],
@@ -274,7 +265,6 @@ form input[type='submit'] {
   overflow: hidden;
 }
 .card img {
-  width: 100%;
   height: auto;
   display: block;
 }
@@ -292,14 +282,13 @@ form input[type='submit'] {
 }
 #topBtn {
   display: none;
-  position: fixed;
   bottom: 20px;
   right: 30px;
   z-index: 99;
   border: none;
   outline: 0;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: #fff;
+  color: #000;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
@@ -307,8 +296,8 @@ form input[type='submit'] {
   transition: opacity 0.3s, visibility 0.3s ease-in-out;
 }
 #topBtn:hover {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 @media screen and (max-width: 800px) {
   #topBtn {
@@ -340,11 +329,9 @@ form input[type='submit'] {
 }
 .mobile {
   z-index: 999;
-  display: flex;
   justify-content: center;
   width: 40px;
   height: 40px;
-  position: relative;
 }
 #burger {
   margin-top: 12px;
@@ -357,20 +344,9 @@ form input[type='submit'] {
     display: none;
   }
 }
-
 #about {
-  background-color: var(--bg-color1);
-  color: white;
   padding: 15vh;
-  width: 100%;
 }
-
-#skills {
-  width: 100%;
-  background-color: var(--bg-color1);
-  color: white;
-}
-
 #divider {
   padding: 25vh;
 }
